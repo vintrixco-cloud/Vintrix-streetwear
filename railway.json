@@ -1,8 +1,9 @@
 {
   "build": {
-    "builder": "NIXPACKS"
+    "builder": "NIXPACKS",
+    "buildCommand": "npm i -g pnpm && pnpm install --no-frozen-lockfile && pnpm --filter vintrix build"
   },
   "deploy": {
-    "startCommand": "pnpm --filter vintrix preview"
+    "startCommand": "npx serve dist"
   }
 }
