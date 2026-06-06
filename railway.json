@@ -1,6 +1,8 @@
 {
   "build": {
-    "builder": "NIXPACKS",
-    "buildCommand": "npm i -g pnpm && pnpm install && pnpm --filter vintrix build"
+    "builder": "NIXPACKS"
+  },
+  "deploy": {
+    "startCommand": "pnpm --filter vintrix preview"
   }
 }
