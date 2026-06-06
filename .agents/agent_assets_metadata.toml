@@ -1,0 +1,50 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "_Jiu3jRWsIbSl4js61LSP"
+uri = "file://artifacts/vintrix/public/images/product-1.png"
+type = "image"
+title = "Gulf Grid Tee"
+
+[[generated]]
+id = "wo_u0HbIwJMxaCUC-vnMa"
+uri = "file://artifacts/vintrix/public/images/product-2.png"
+type = "image"
+title = "Doha Nights Hoodie"
+
+[[generated]]
+id = "nJ_cj7FUXVcIcDAK9h2ze"
+uri = "file://artifacts/vintrix/public/images/product-3.png"
+type = "image"
+title = "Circuit Cargo Pants"
+
+[[generated]]
+id = "LpKJdz9pR4OGgHDLyJQ3I"
+uri = "file://artifacts/vintrix/public/images/product-4.png"
+type = "image"
+title = "Sands Snapback"
+
+[[generated]]
+id = "rl4y6ngqn4s1XKOFrEX3c"
+uri = "file://artifacts/vintrix/public/images/product-5.png"
+type = "image"
+title = "Gulf Heat Longsleeve"
+
+[[generated]]
+id = "WVf8WJaAc_Hhc3cRYyARY"
+uri = "file://artifacts/vintrix/public/images/product-6.png"
+type = "image"
+title = "Vintrix Logo Hoodie"
+
+[[generated]]
+id = "3Ks8_uEfZgxmZb9ShbBgA"
+uri = "file://artifacts/vintrix/public/images/product-7.png"
+type = "image"
+title = "Desert Storm Joggers"
+
+[[generated]]
+id = "SAwx6flr7h4NrPXfvhiEe"
+uri = "file://artifacts/vintrix/public/images/product-8.png"
+type = "image"
+title = "Brass Chain Necklace"

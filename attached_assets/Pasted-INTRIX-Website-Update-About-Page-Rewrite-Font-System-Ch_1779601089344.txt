@@ -1,0 +1,60 @@
+INTRIX Website Update — About Page Rewrite + Font System Change
+Make the following two changes to the existing VINTRIX streetwear website:
+
+CHANGE 1 — FONT SYSTEM
+Replace all instances of Space Mono and Barlow Condensed throughout the entire website with Plus Jakarta Sans (the closest Google Fonts equivalent to Neo — clean, modern, geometric with a sharp edge). Import it from Google Fonts. Keep Bebas Neue exactly where it is for all large display headings. The new font hierarchy is:
+
+Bebas Neue → hero headings, section titles, large display text only
+Plus Jakarta Sans → everything else: body text, nav links, product labels, prices, buttons, form fields, cart, footer, about page paragraphs, any descriptive text
+
+Update the CSS globally so every element that previously used Space Mono or Barlow Condensed now uses Plus Jakarta Sans. Font weights to import: 300, 400, 500, 600, 700.
+
+CHANGE 2 — ABOUT PAGE COMPLETE REWRITE
+Tear out the existing about page content entirely and rebuild it with the following structure, copy, and design:
+Section 1 — Full viewport hero
+Large Bebas Neue heading, white text on black:
+"WE DON'T FOLLOW TRENDS. WE IGNORE THEM."
+Below it in Plus Jakarta Sans, light weight, muted grey, uppercase tracking-widest, small text:
+"VINTRIX — EST. 2025"
+Section 2 — Brand manifesto, two column layout
+Left column — large Bebas Neue text, outlined/stroke style (no fill, just white outline):
+"BUILT DIFFERENT"
+Right column — Plus Jakarta Sans, size 18–20px, muted foreground color, uppercase, wide letter spacing, line height 1.8. Three separate paragraphs with spacing between them:
+Paragraph 1:
+"VINTRIX WASN'T BUILT TO FIT IN. IT WAS BUILT FOR PEOPLE WHO LOOK AT MAINSTREAM FASHION AND FEEL ABSOLUTELY NOTHING. EVERY PIECE WE MAKE IS A REJECTION OF THE ORDINARY."
+Paragraph 2:
+"WE TREAT CLOTHING AS A CANVAS. EVERY ALL-OVER PRINT IS GRAPHIC ART YOU WEAR — NOT A LOGO SLAPPED ON A BLANK. NOT A TREND CHASED. SOMETHING MADE WITH INTENTION AND WORN WITH CONVICTION."
+Paragraph 3:
+"NO SOFT EDGES. NO SEASONAL COLLECTIONS. NO CHASING WHAT'S ALREADY BEEN DONE. JUST HEAVY GARMENTS, UNCOMPROMISING DESIGN, AND A STANDARD THAT DOESN'T MOVE."
+Section 3 — Three value pillars, horizontal layout, full width, bordered boxes
+Each box has a large Bebas Neue number (01, 02, 03) in outlined style, a short Bebas Neue title, and a Plus Jakarta Sans description underneath. Sharp borders, no rounded corners, dark background.
+Box 1:
+Number: 01
+Title: "THE CRAFT"
+Description: "Every design is built from scratch. All-over print done properly — not templated, not recycled. If it doesn't hit, it doesn't ship."
+Box 2:
+Number: 02
+Title: "THE STANDARD"
+Description: "Premium heavyweight fabric. Custom neck labels. Branded packaging. Every detail considered before it reaches you."
+Box 3:
+Number: 03
+Title: "THE MINDSET"
+Description: "We're not here to dress everyone. We're here for the ones who actually care about what they put on. You know who you are."
+Section 4 — Closing statement, centered, full width, large typography
+Giant Bebas Neue text centered on screen, mix of filled and outlined style alternating between lines:
+Line 1 (filled white): "WEAR IT"
+Line 2 (outlined, no fill): "LIKE YOU"
+Line 3 (filled white): "MEAN IT"
+Below that in Plus Jakarta Sans, small, muted, uppercase, wide tracking:
+"WORLDWIDE SHIPPING — UNCOMPROMISING QUALITY — LIMITED DROPS"
+Then a sharp bordered button in white border, white text, no background, Plus Jakarta Sans, uppercase tracking-widest:
+"SHOP NOW" — links to /shop
+
+GENERAL RULES FOR BOTH CHANGES:
+
+Zero rounded corners anywhere on the page — everything sharp
+No soft shadows — if shadows exist make them hard offset
+Maintain the existing dark color scheme (near black background, off-white foreground)
+Keep all existing animations (framer motion fade-ins) and apply them to the new about page sections too — each section should fade up on scroll into view
+Mobile responsive — stacked single column on mobile, two column on desktop
+Do not touch any other pages except the font change which applies globally

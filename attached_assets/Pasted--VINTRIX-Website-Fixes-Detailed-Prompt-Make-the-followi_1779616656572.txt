@@ -1,0 +1,25 @@
+
+VINTRIX Website Fixes — Detailed Prompt
+Make the following specific fixes to the existing VINTRIX website. Do not change anything that is not mentioned. Do not redesign any pages. Only fix exactly what is listed below.
+FIX 1 — Footer description
+Find the Footer component. Change the paragraph text that currently says "Born in Doha. Uncompromising streetwear for the culture." and replace it with: "UNCOMPROMISING STREETWEAR. MADE DIFFERENT." Keep the same font, size, color, and styling — only the text changes.
+FIX 2 — Home page brand statement paragraph
+In the Home page, find the Brand Statement section (the one with "MADE DIFFERENT" in outlined text on the left). Find the second paragraph that starts with "BORN IN THE STREETS OF DOHA..." and replace it entirely with: "WE TAKE RAW ENERGY AND TRANSLATE IT INTO HEAVY GARMENTS, STARK SILHOUETTES, AND UNCOMPROMISING DESIGN. NO GEOGRAPHY. NO LIMITS." Keep the same styling, font, size, and color as the other paragraphs in that section.
+FIX 3 — Hero subtext
+In the Home page hero section, find the line at the bottom that reads "BORN IN DOHA. SHIPS WORLDWIDE." and replace it with: "WEAR IT ANYWHERE. SHIPS WORLDWIDE." Keep exact same font, size, tracking, and positioning.
+FIX 4 — Cart count badge in Nav
+In the Nav component, find where the cart count is displayed. Currently it shows the cart count number as plain inline text next to "CART". Wrap the cart count number in a styled badge — a small square box, white background, black text, no border radius, minimum width and height of 20px, centered text, font size 12px, Plus Jakarta Sans font, font weight 700. It should look like a tight little white square with the number inside it, sitting right next to the word "CART". If cartCount is 0, still show the badge with "0" inside it.
+FIX 5 — Product card price font
+In the ProductCard component, find the price display element which currently uses the class "font-space". Change "font-space" to use inline style fontFamily: 'Plus Jakarta Sans', sans-serif instead, with font weight 600. Keep all other classes exactly the same.
+FIX 6 — Product page description font
+In the ProductPage component, find the product description paragraph which uses the class "font-barlow". Remove the "font-barlow" class and replace it with an inline style: style={{ fontFamily: 'Plus Jakarta Sans, sans-serif' }}. Keep all other classes exactly the same — the text-xl, uppercase, tracking-wide, text-muted-foreground, mb-12, max-w-xl classes all stay.
+FIX 7 — Make the product page accordion functional
+In the ProductPage component, find the three accordion-style rows at the bottom of the right panel (MATERIAL & CARE, SHIPPING, RETURNS). Currently they show a + icon but do nothing when clicked. Make them functional as follows:
+Add state to track which panel is open. Use useState — a single string state that holds the name of the currently open panel, defaulting to null (all closed). When a row is clicked, toggle it open if closed or close it if already open.
+When a panel is open, the + icon changes to a −, and a content div slides open below the row text with the following content for each:
+MATERIAL & CARE panel content: "100% HEAVYWEIGHT COTTON. MACHINE WASH COLD. DO NOT TUMBLE DRY. IRON ON REVERSE."
+SHIPPING panel content: "WORLDWIDE SHIPPING. ORDERS PROCESSED WITHIN 2–4 BUSINESS DAYS. DELIVERY TIMES VARY BY REGION. TRACKING PROVIDED ON ALL ORDERS."
+RETURNS panel content: "RETURNS ACCEPTED WITHIN 14 DAYS OF DELIVERY. ITEM MUST BE UNWORN AND IN ORIGINAL CONDITION. CONTACT US BEFORE RETURNING."
+The content text should use Plus Jakarta Sans, font size 13px, text-muted-foreground color, uppercase, tracking-widest, line height relaxed. The open/close should animate with a smooth max-height transition (max-height 0 to 200px, transition duration 300ms ease). The row itself should have a subtle hover state darkening slightly on hover.
+
+That is every fix. Do not touch any other files, components, or styles beyond what is listed above
