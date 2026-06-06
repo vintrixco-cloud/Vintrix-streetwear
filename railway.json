@@ -1,1 +1,6 @@
-'{"build": {"builder": "NIXPACKS", "buildCommand": "npm i -g pnpm && pnpm install && pnpm --filter vintrix build"}}' 
+{
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "npm i -g pnpm && pnpm install && pnpm --filter vintrix build"
+  }
+}
