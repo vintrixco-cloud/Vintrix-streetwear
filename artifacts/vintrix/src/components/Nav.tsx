@@ -9,7 +9,6 @@ export function Nav() {
   const { cartCount } = useCart();
   const { user } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
-  const [location] = useLocation();
 
   const navLinks = [
     { href: "/", label: "HOME" },
@@ -38,30 +37,26 @@ export function Nav() {
       </div>
 
       <div className="flex-1 flex justify-end items-center gap-3">
-        {/* Account icon */}
         <motion.div whileHover={{ scale: 1.08 }} whileTap={{ scale: 0.94 }} transition={{ duration: 0.15 }}>
           <Link href={user ? "/account" : "/auth"} className="flex items-center justify-center w-9 h-9 border border-transparent hover:border-white transition-colors text-muted-foreground hover:text-white">
             <User size={16} />
           </Link>
         </motion.div>
 
-        {/* Cart */}
         <motion.div whileHover={{ scale: 1.08 }} whileTap={{ scale: 0.94 }} transition={{ duration: 0.15 }}>
           <Link href="/cart" className="flex items-center gap-2 text-sm tracking-widest border border-transparent hover:border-white transition-colors px-3 py-1 text-muted-foreground hover:text-white" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
             CART
-            <span className="inline-flex items-center justify-center bg-white text-black font-bold text-xs leading-none" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", minWidth: '20px', height: '20px', padding: '0 4px' }}>
+            <span className="text-white font-bold text-sm" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
               {cartCount}
             </span>
           </Link>
         </motion.div>
 
-        {/* Mobile menu button */}
         <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} transition={{ duration: 0.15 }} className="md:hidden text-white" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </motion.button>
       </div>
 
-      {/* Mobile menu */}
       {isOpen && (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }} className="fixed inset-0 z-40 bg-background flex flex-col items-center justify-center md:hidden" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
           <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="absolute top-5 right-6 text-white" onClick={() => setIsOpen(false)}>
