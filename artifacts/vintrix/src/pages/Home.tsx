@@ -10,24 +10,28 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <section className="relative h-[calc(100vh-4rem)] flex flex-col items-center justify-center overflow-hidden bg-grid-texture pt-20">
         <div className="absolute inset-0 bg-black/60 pointer-events-none" />
-        <div className="relative z-10 text-center flex flex-col items-center w-full px-4">
-          <motion.img
-            src="/name_white_png.png"
-            alt="VINTRIX"
-            initial={{ y: 50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="w-[80vw] max-w-[900px] object-contain"
-          />
-          <motion.h2
-            initial={{ y: 50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="font-bebas text-[15vw] leading-[0.8] tracking-tighter text-stroke-white mt-[-2vw]"
-          >
-            STREETWEAR
-          </motion.h2>
+        
+        <div className="relative z-10 flex flex-col items-center w-full px-4">
+          <div className="relative flex flex-col items-center w-full">
+            <motion.img
+              src="/name_white_png.png"
+              alt="VINTRIX"
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="w-[80vw] max-w-[900px] object-contain relative z-10"
+            />
+            <motion.img
+              src="/png_strretwear.png"
+              alt="STREETWEAR"
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+              className="w-[90vw] max-w-[1000px] object-contain mt-[-6vw] relative z-0"
+            />
+          </div>
         </div>
+
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
